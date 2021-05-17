@@ -5,7 +5,7 @@
   - [2FA Set-Up (Not Required)](#2fa-set-up-not-required)
   - [Stream Settings](#stream-settings)
 - [Uploading to YouTube](#uploading-to-youtube)
-- [Using Streaming Templates (Templates currently unavailable)](#using-streaming-templates-templates-currently-unavailable)
+- [Using Streaming Templates](#using-streaming-templates)
   - [Streamelements OBS.live](#streamelements-obslive)
   - [Streamlabs](#streamlabs)
 - [Editing Assets](#editing-assets)
@@ -48,16 +48,14 @@ To Upload
 
    -Premieres upload and process the video but do not show the video until a date and time of your choosing. At that time,the video will play simultaneously for all viewers with chat enabled until the duration of the video has passed wherein it will behave like an ordinary public video
 
-# Using Streaming Templates (Templates currently unavailable)
+# Using Streaming Templates 
 All of the below methods allow for customizing of templates after importing but aside from resizing individual assets, rewriting text, and other such minor changes, Adobe After Effects is needed to edit assets.
  ## Streamelements OBS.live
- Streamelements specific templates are located in `./templates/obslive/`. Streamelements users have a choice between using the web-based overlay editor doing so in the desktop client. As a general guideline, the web-based editor allows for easier collaboration and reduced client-side load. Using the template on the desktop client increases system load but eliminates framerate issues caused by lag to the Streamelements servers. I generally prefer to run my streams entirely client-side aside from twitch chat integrations.
+ Streamelements specific templates are located in `./templates/obslive/`. Streamelements users have a choice between using the web-based overlay editor doing so in the desktop client. As a general guideline, the web-based editor allows for easier collaboration and reduced client-side load. Using the template on the desktop client increases system load but eliminates framerate issues caused by lag to the Streamelements servers. I generally prefer to run my streams entirely client-side aside from twitch chat integrations. Templates included are for running client-side. Note, setting conditional transitions requires the [OBS Transition Matrix](https://obsproject.com/forum/resources/obs-transition-matrix.751/)
 
- If using the web-based editor, create and log into your Streamelements account. Open the Overlay links files desired in `./templates/obslive/web/` and wait for the import finished notification in the Streamelements website. The overlay should now appear in "My Overlays" with a title matching that of the file name. Click on launch overlay to get the url of this overlay and paste this url into OBS.live as a browser source.
-
- If using the desktop client
+ To install templates using Streamelements or OBS
  1. Go into scene collections and select import. 
- 2. Select the `.json` file in `./obslive/obs/` containing the desired templates 
+ 2. Select the `.json` file in `./obs/` containing the desired templates 
  3. Note that some paths may not transfer properly and will need to be manually added or adjusted. 
  ## Streamlabs 
  Streamlabs specific templates are located in `./templates/slobs/`
